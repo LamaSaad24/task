@@ -1,0 +1,38 @@
+.service-item{
+    background-color: #FFF;
+    margin: 10px;
+    padding: 30px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.service-item::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: -1;
+}
+
+.service-item:hover :is(p,h3,a){
+    color: #FFF!important;
+    transition: .4s ease-in;
+}
+.service-item:hover::after{
+    transition: .6s ease-in;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.service-item-icon{
+    font-size: 40px;
+}
+
+.service-item:hover{
+    transform: scale(1.1);
+    transition: .5s ease-in;
+}

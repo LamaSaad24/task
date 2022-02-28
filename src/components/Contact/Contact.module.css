@@ -1,0 +1,40 @@
+.list{
+    background-color: #f5de0cb6;
+    color: #444;
+    border-radius: 10px;
+    list-style: none;
+    padding: 20px;
+}
+
+.list li{
+    margin: 10px;
+    position: relative;
+}
+
+.list li::after{
+    content: '';
+    position: absolute;
+    right: -20px;
+    top: calc(50% - 5px);
+    width: 10px;
+    height: 10px;
+    background-color: #444;
+
+}
+
+.contact h3{
+    position: relative;
+    width: fit-content;
+    margin-bottom: 30px;
+}
+
+.contact h3::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -80px;
+    width: 70px;
+    height: 2px;
+    background-color: #f5de0cb6;
+
+}

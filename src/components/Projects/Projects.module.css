@@ -1,0 +1,8 @@
+.projects-item{
+    cursor: pointer;
+    margin: 10px 0;
+}
+.projects-item:hover img {
+    transform: scale(1.1);
+    transition: .4s ease-in;
+}
